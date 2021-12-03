@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+ <head>
+    <title>Assignment1_Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+ <body>
+    <header>
+      <a href="#" class="fabian">Fabian</a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#sec">About</a></li>
+        <li><a href="#inner">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+     <img src="stars.png" id="stars">
+     <img src="moon.png" id="moon">
+     <img src="mountains_behind.png" id="mountains_behind">
+     <h2 id="text">Fabian Chia</h2>      
+     <a href="#sec" id="btn">Explore</a>                                                                                                                                                                                                                                                                                   
+     <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>About</h2>
+        <p>Hewllo my name is Fabian, i am currently in year 1 in Immersive Media at Ngee Ann Polytechnic.
+          <br><br>A brief intro about me is that i love to go out with my friends to explore new places with them.I also love to play games like CS-GO,Valorant, Apex Legend,League of Legends and i also watch Animes series , Netflix series and movies.  </p>
+    </div>
+
+    <div class="inner" id="inner">
+      <div class="header">
+          <h1>My Skills</h1>
+      </div>
+      <div class="container">
+          <div class="skill-box">
+              <div class="skill-title">
+                  <div class="img">
+                     <img src="html.png" class="skill-icon">
+                  </div>
+                  <h3>HTML 5</h3>
+              </div>
+              <p>HTML5 is a markup language used for structuring and presenting content on the World Wide Web.</p>
+          </div>
+          <div class="skill-box">
+            <div class="skill-title">
+                <div class="img">
+                   <img src="css3.png" class="skill-icon">
+                </div>
+                <h3>CSS 3</h3>
+            </div>
+            <p>CSS3 adds several new styling features and improvements to enhance the web presentation capabilities.</p>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+              <div class="img">
+                 <img src="swift.png" class="skill-icon">
+              </div>
+              <h3>Swift</h3>
+          </div>
+          <p>Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. and the open-source community. </p>
+      </div>
+      <div class="skill-box">
+        <div class="skill-title">
+            <div class="img">
+               <img src="python.png" class="skill-icon">
+            </div>
+            <h3>Python</h3>
+        </div>
+        <p>Python is an interpreted high-level general-purpose programming language. Its design philosophy emphasizes code readability with its use of significant indentation.</p>
+    </div>
+    <div class="skill-box">
+      <div class="skill-title">
+          <div class="img"> 
+             <img src="javascript.png" class="skill-icon">
+          </div>
+          <h3>Javascript</h3>
+      </div>
+      <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. </p>
+  </div>
+  <div class="skill-box">
+    <div class="skill-title">
+        <div class="img">
+           <img src="mysql.png" class="skill-icon">
+        </div>
+        <h3>MySQL</h3>
+    </div>
+    <p>MySQL is an open-source relational database management system.</p>
+  </div>
+      </div>
+
+      
+    
+  <div class="contactbox" id="contact">
+    <form action="action_page.php">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="singapore">Singapore</option>
+        <option value="malaysia">Malaysia</option>
+        <option value="china">China</option>
+        <option value="vietnam">Vietnam</option>
+        <option value="india">India</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value  * 0.25 + 'px';
+            moon.style.top = value  * 1.05 + 'px';
+            mountains_behind.style.top = value  * 0.5 + 'px';
+            mountains_front.style.top = value  * 0 + 'px';
+            text.style.marginRight = value  * 4 + 'px';
+            text.style.marginTop = value  * 1.5 + 'px';
+            btn.style.marginTop = value  * 1.5 + 'px';
+            header.style.top = value  * 0.5 + 'px';
+        })
+    </script>
+ </body>
+</html>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
